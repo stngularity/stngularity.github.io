@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Base config for website's page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta -->
+    <title>Document</title>
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- Scripts -->
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Lines (decoration) -->
+    <img src="/assets/images/lines.png" class="lines">
+
+    <!-- Header of page -->
+    <header class="header">
+        <!-- Website navigation -->
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/about">About me</a>
+            <a href="/projects">Projects</a>
+            <a href="/history">History</a>
+        </nav>
+    </header>
+
+    <!-- Section 1 : About me -->
+    <section class="section active" id="about">
+        <!-- Content -->
+        <div class="content">
+            <!-- Text about me -->
+            <div class="x3-text">
+                <p class="little-text">Hi everyone,</p>
+                <p class="big-text">I'm <strong>stngularity.</strong></p>
+                <p class="about-text">
+                    My name is <strong>Alexander.</strong> I live in <strong>Russia</strong> and I develop some <em>bots, utils, etc.</em> I love programming and design, also I love to play <strong>Genshin Impact</strong> & <strong>Minecraft.</strong> I'm interested in space and mathematics. I program in <strong>Python, JS, Java,</strong> and <strong>C++</strong> <em>(currently studying),</em> do <strong>HTML</strong> and <strong>CSS</strong> layout and sometimes design. I know <strong>Russian</strong> as native, and <em>learning</em> <strong>English</strong> & <strong>German.</strong> I was born on <strong>January 20, 2010.</strong> It's funny, but I started learning programming in <strong>4th grade.</strong> By the way, I like cats and tea. And my favorite music is <strong>music in Lo-Fi style,</strong> and <strong>Nightcore</strong> remixes. My favorite anime is <a href="https://shikimori.one/animes/z38000-kimetsu-no-yaiba">Kimetsu no Yaiba.</a>
+                </p>
+            </div>
+
+            <!-- My contacts -->
+            <div class="contacts">
+                <!-- Contact 1 : GitHub -->
+                <a href="https://github.com/stngularity">
+                    <svg><use href="/assets/images/icons/github.svg#img"></svg>
+                </a>
+
+                <!-- Contact 2 : Discord -->
+                <a href="https://discord.com/users/813065322453925940">
+                    <svg><use href="/assets/images/icons/discord.svg#img"></svg>
+                </a>
+
+                <!-- Contact 3 : Telegram -->
+                <a href="https://t.me/thestngularity">
+                    <svg><use href="/assets/images/icons/telegram.svg#img"></svg>
+                </a>
+
+                <!-- Contact 4 : VK -->
+                <a href="https://vk.com/stngularity">
+                    <svg><use href="/assets/images/icons/vk.svg#img"></svg>
+                </a>
+
+                <!-- Contact 5 : Steam -->
+                <a href="https://steamcommunity.com/id/stngularity">
+                    <svg><use href="/assets/images/icons/steam.svg#img"></svg>
+                </a>
+
+                <!-- Contact 6 : Email -->
+                <a href="mailto:stngularity@gmail.com">
+                    <svg><use href="/assets/images/icons/email.svg#img"></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Projects -->
+    <section class="section" id="projects">
+        <!-- Content -->
+        <div class="content">
+            <p class="big-text">My <strong>projects</strong></p>
+
+            <!-- Projects -->
+            <div class="swiper">
+                <!-- The wrapper for Swiper.JS -->
+                <div class="swiper-wrapper" id="projects">
+                    <!-- Project 1: Syr -->
+                    <div class="swiper-slide">
+                        <div class="project-card" style="background-image: url('/assets/images/projects/syr.svg'); border: 1px solid #220F30; --topic-ac: #624F70; --topic-abgc: #624F701A">
+                            <div class="project-text">
+                                <h1>Syr <span class="project-badge">WIP</span></h1>
+                                <h3>Discord bot with a lot of useful (and fun) functionality. We create it so that it can replace as many bots as possible, leaving the level of implementation of a particular feature at the same level, and sometimes even at a higher level.</h3>
+                            </div>
+
+                            <div class="project-bottom">
+                                <div class="project-topics">
+                                    <span class="topic">discord</span>
+                                    <span class="topic">discord-api</span>
+                                    <span class="topic">bots</span>
+                                    <span class="topic">music</span>
+                                    <span class="topic">utils</span>
+                                </div>
+    
+                                <div class="project-languages">
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/python.svg#img"/></svg>
+                                        Python
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: SyrDB -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h1>SyrDB <span class="project-badge">WIP</span></h1>
+                                <h3>New database created for a wide variety of projects, it supports SQL and NoSQL. If you are migrating from another database to this one, then the migration from other databases feature will help you!</h3>
+                            </div>
+    
+                            <div class="project-bottom">
+                                <div class="project-topics">
+                                    <span class="topic">sql</span>
+                                    <span class="topic">database</span>
+                                    <span class="topic">cpp</span>
+                                    <span class="topic">nosql</span>
+                                    <span class="topic">bson</span>
+                                    <span class="topic">bdsfmt</span>
+                                </div>
+    
+                                <div class="project-languages">
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/cpp.svg#img"/></svg>
+                                        C++
+                                    </span>
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/cmake.svg#img"/></svg>
+                                        CMake
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: BDSFmt -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h1>BDSFmt <span class="project-badge supported">Supported</span></h1>
+                                <h3>BDSF (Binary data storage format) is a binary data storage format that occupies a minimum amount of disk space.</h3>
+                            </div>
+        
+                            <div class="project-bottom">
+                                <div class="project-topics">
+                                    <span class="topic">data</span>
+                                    <span class="topic">storage</span>
+                                </div>
+        
+                                <div class="project-languages">
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/md.svg#img"/></svg>
+                                        Markdown
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: JSAndCSSPack -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h1>JSAndCSSPack <span class="project-badge archived">Archived</span></h1>
+                                <h3>Style and scripts pack</h3>
+                            </div>
+        
+                            <div class="project-bottom">
+                                <div class="project-topics">
+                                    <span class="topic">css</span>
+                                    <span class="topic">js</span>
+                                </div>
+        
+                                <div class="project-languages">
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/css.svg#img"/></svg>
+                                        CSS
+                                    </span>
+                                    <span class="lang">
+                                        <svg><use href="/assets/images/planguages/js.svg#img"/></svg>
+                                        JavaScript
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper.JS navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+            slidesPerView: 2,
+            centeredSlides: true,
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
+    
+</body>
+</html>

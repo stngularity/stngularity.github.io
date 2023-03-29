@@ -1,0 +1,34 @@
+<svg width="420" height="280" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_873_8)">
+<rect width="420" height="280" fill="url(#paint0_linear_873_8)"/>
+<circle r="25" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="50" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="75" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="100" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="125" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="150" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="175" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="200" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="225" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="250" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="275" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="300" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="325" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="350" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="375" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="400" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="425" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="450" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="475" stroke="#BFBFDF" stroke-opacity="0.05"/>
+<circle r="500" stroke="#BFBFDF" stroke-opacity="0.05"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_873_8" x1="0" y1="0" x2="420" y2="280" gradientUnits="userSpaceOnUse">
+<stop stop-color="#220F30"/>
+<stop offset="1" stop-color="#192026"/>
+</linearGradient>
+<clipPath id="clip0_873_8">
+<rect width="420" height="280" fill="white"/>
+</clipPath>
+</defs>
+</svg>
