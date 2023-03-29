@@ -6,6 +6,8 @@
     --comment-color-01: #7c85981a;
     --primary-color: #c6a76f;
     --primary-color-01: #c6a76f1a;
+
+    --swiper-theme-color: var(--primary-color) !important;
 }
 
 /* Styles for primary elements */
@@ -294,4 +296,26 @@ body {
 
     fill: var(--comment-color);
     margin-right: 0.5rem;
+}
+
+/* Styles for swiper buttons */
+.swiper-button-next, .swiper-button-prev {outline: none}
+
+/* Styles for message */
+.message {
+    position: fixed;
+    padding: 0.5rem 1rem;
+
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--color);
+
+    background-color: var(--block-color);
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    right: 6vw;
+    bottom: 0;
+
+    cursor: default;
+    z-index: 1;
 }
