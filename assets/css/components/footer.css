@@ -86,8 +86,8 @@ footer.pseudo-footer nav.navigation ul li button svg {
 @media screen and (min-width: 300px) and (orientation: portrait) {
     footer.pseudo-footer {
         justify-content: center;
-        width: 84vw;
-        
+        width: 88vw;
+
         bottom: 1.5vh;
     }
 
