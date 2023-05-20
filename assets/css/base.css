@@ -78,3 +78,8 @@ h1 strong, h1 strong em {
 }
 
 em {font-size: .8em !important}
+
+/* Adaptation [mobile] */
+@media screen and (min-width: 300px) and (orientation: portrait) {
+    body {padding: 4vh 8vw}
+}
