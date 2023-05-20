@@ -1,0 +1,54 @@
+/* Base styles for buttons */
+.button {
+    padding: 1rem 2rem;
+
+    color: var(--color);
+
+    background: none;
+    border: none;
+    border-radius: 0.4rem;
+
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.button:not([disabled]):hover {background-color: var(--block)}
+
+.button .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    fill: currentColor;
+    transition: .3s linear;
+}
+
+.button:disabled .icon {fill: var(--transparent-color)}
+
+/* Styles for [type "icon"] buttons */
+.button.icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+/* Styles for [type "outline"] buttons */
+.button.outline {border: 2px solid var(--color)}
+.button.outline .icon {fill: var(--color)}
+
+.button.outline:not([disabled]):hover {background-color: var(--color)}
+.button.outline:not([disabled]):hover .icon {fill: var(--background)}
+
+/* Styles for [color "primary"] buttons */
+.button.primary {color: var(--primary)}
+.button.primary .icon {filter: drop-shadow(var(--primary-shadow-nt))}
+
+.button.primary.outline {
+    border-color: var(--primary);
+    box-shadow: var(--primary-shadow),
+                inset var(--primary-shadow);
+}
+
+.button.primary.outline .icon {fill: var(--primary)}
+.button.primary.outline:not([disabled]):hover {background-color: var(--primary)}
+.button.outline:not([disabled]):hover .icon {fill: var(--color)}

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta : [title] -->
-    <title>stngularity's portfolio</title>
-    <meta property="og:title" content="stngularity's portfolio">
+    <title>stngularity's portfolio - projects</title>
+    <meta property="og:title" content="stngularity's portfolio - projects">
     <meta property="og:site_name" content="stngularity">
 
     <!-- Meta : [description] -->
@@ -47,53 +47,14 @@
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/buttons.css">
-    <link rel="stylesheet" href="/assets/css/pages/index.css">
+    <link rel="stylesheet" href="/assets/css/pages/projects.css">
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
 </head>
 <body>
 
     <!-- Content of the page -->
     <main class="content">
-        <!-- "About me" section -->
-        <section id="about">
-            <!-- The text content (h1, p) -->
-            <div class="text-information">
-                <h1>Hi! I'm <strong>stngularity!</strong></h1>
-                <p>My name is <strong>Alexander</strong> and I <strong>live in Russia.</strong> I develop a variety of projects, and I also create UI/UX design! I love programming! Also, I love to play some computer games. I'm interested in space and mathematics. I program in <strong>Python, JS, Java, C++ <em>(currently studying)</em> and Kotlin <em>(currently studying)</em>.</strong> Furthermore, I do <strong>HTML & CSS markup and sometimes design.</strong> I know Russian as native, and learning English & German. I was born on <strong>January 20, 2010.</strong> It's funny, but I started learning programming in 4th class. By the way, I like cats and tea. And my favorite music is music in Lo-Fi style, and Nightcore remixes. My favorite anime is <a href="https://shikimori.me/animes/z38000-kimetsu-no-yaiba" target="_blank" rel="noopener noreferrer" class="link">Kimetsu no Yaiba.</a></p>
-            </div>
-
-            <!-- Image (maybe put random image from /assets/images/gallery) -->
-            <img src="/assets/images/background.jpg" class="image" loading="lazy">
-        </section>
-
-        <!-- "Play random music" section -->
-        <section id="music">
-            <!-- Play button, some information -->
-            <div class="left">
-                <!-- Play music button -->
-                <button class="button outline primary icon" id="play">
-                    <svg class="icon"><use href="/assets/images/icons/play.svg#img"/></svg>
-                </button>
-
-                <!-- Some information about music -->
-                <div class="information">
-                    <!-- Action that runs by click on #play button -->
-                    <span class="action">
-                        Play random music
-                        <span class="mobile-hide">from <a href="https://github.com/stngularity/stngularity.github.io/tree/main/assets/music" target="_blank" rel="noopener noreferrer" class="link">/assets/music/</a> folder</span>
-                    </span>
-
-                    <!-- Comment -->
-                    <span class="comment"><span id="tracks_count">-1</span> possible tracks</span>
-                </div>
-            </div>
-
-            <!-- Actions -->
-            <div class="right">
-                <button class="button icon" id="download"><svg class="icon"><use href="/assets/images/icons/download.svg#img"/></svg></button>
-                <button class="button icon" id="upload"><svg class="icon"><use href="/assets/images/icons/external.svg#img"/></svg></button>
-            </div>
-        </section>
+        
     </main>
 
     <!-- Pseudo footer of the page -->
@@ -109,14 +70,14 @@
             <!-- List with navigation elements -->
             <ul>
                 <!-- Link to website's page [home] -->
-                <li class="active">
+                <li>
                     <button class="button icon" data-page="index">
                         <svg class="icon"><use href="/assets/images/icons/home.svg#img"/></svg>
                     </button>
                 </li>
 
                 <!-- Link to website's page [projects] -->
-                <li>
+                <li class="active">
                     <button class="button icon" data-page="projects">
                         <svg class="icon"><use href="/assets/images/icons/project.svg#img"/></svg>
                     </button>
@@ -140,9 +101,7 @@
     </footer>
 
     <!-- Scripts of the page -->
-    <script src="/assets/js/music.js"></script>
     <script src="/assets/js/pages.js"></script>
-    <script>(new AudioPlayer("#music")).setup()</script>
     
 </body>
 </html>

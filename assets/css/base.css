@@ -1,321 +1,80 @@
 :root {
-    --background-color: #282c34;
-    --block-color: #2d3036;
-    --color: #9ca5b8;
-    --comment-color: #7c8598;
-    --comment-color-01: #7c85981a;
-    --primary-color: #c6a76f;
-    --primary-color-01: #c6a76f1a;
+    --background: #161821;
+    --block: #26283180;
 
-    --swiper-theme-color: var(--primary-color) !important;
+    --color: #E0E0E0;
+    --transparent-color: #E0E0E080;
+    --comment: #AFAFCF;
+    --transparent-comment: #AFAFCF80;
+    --primary: #2677F0;
+    --transparent-primary: #2677F080;
+
+    --blur: 15px;
+    --radius: .4rem;
+
+    --shadow: 8px 10px 25px rgba(0, 0, 0, .2);
+    --primary-shadow-nt: 0 0 10px var(--primary);
+    --primary-shadow: 0 0 10px var(--transparent-primary);
+    --primary-shadow-up: 0 -5px 10px var(--transparent-primary);
+    --primary-shadow-text: 0 0 20px var(--transparent-primary);
+    --primary-shadow-h1: 0 0 40px var(--transparent-primary);
 }
 
-/* Styles for primary elements */
-*, *::after, *::before {
+/* Primary styles of page */
+*, *::before, *::after {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    
-    padding: 0;
-    margin: 0;
+    text-decoration: none;
+    color: var(--color);
 
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
     position: relative;
-    min-height: 100vh;
-    height: max-content;
+    width: 88vw;
+    height: 84vh;
+    padding: 8vh 6vw;
 
-    background-color: var(--background-color);
-    overflow-y: hidden;
+    background-color: var(--background);
 }
 
-/* Styles for header */
-.header {
-    position: absolute;
-    width: 100%;
-    height: 7vh;
-    padding: 0 6vw;
-
-    inset: 0;
-    z-index: 1;
-}
-
-.header nav {
-    display: flex;
-    height: 100%;
-}
-
-.header nav a {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
+/* Styles for links */
+a.link {
     font-weight: 700;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: var(--color);
-
-    transition: .3s linear;
-    margin-right: 3vw;
-}
-
-.header nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: var(--primary-color);
-
-    border-radius: 2px;
-
-    left: 0;
-    bottom: 0;
+    color: var(--primary);
 
     transition: .3s linear;
 }
 
-.header nav a:hover, .header nav a.active {color: var(--primary-color)}
-.header nav a:hover::after {width: 100%}
-.header nav a.active::after {width: 0%}
+a.link:hover {text-shadow: var(--primary-shadow)}
 
 /* Styles for sections */
-.section {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+section {width: 88vw}
 
-    opacity: 0;
-    transition: .4s linear;
+/* Styles for text */
+h1 {
+    font-size: 2.2em;
+    font-weight: 800;
 }
 
-.section.active {
-    position: relative;
-    opacity: 1;
-}
-
-.section .content {
-    position: absolute;
-    width: calc(100% - 12vw);
-    height: max-content;
-
-    inset: 0;
-    color: var(--color);
-    
-    margin: 7vh 6vw;
-    margin-top: 25%;
-    transform: translateY(-50%);
-}
-
-.section .content p.little-text {
-    font-weight: 600;
+strong, strong em {
     font-size: 1em;
-    margin-bottom: 0.5rem;
-}
-
-.section .content p.big-text {
-    font-weight: 800;
-    font-size: 2.5em;
-    line-height: 100%;
-}
-
-.section .content p.big-text strong {
-    font-weight: 800;
-    font-size: 1em;
-    color: var(--primary-color);
-}
-
-.section .content p.about-text {
-    font-weight: 600;
-    margin-top: 1rem;
-    width: 50vw;
-}
-
-.section .content p.about-text strong {
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary);
+    text-shadow: var(--primary-shadow-text);
 }
 
-.section .content p.about-text em {font-weight: 600}
-
-.section .content p.about-text a {
-    font-weight: 700;
-    color: var(--color);
-
-    transition: .2s linear;
+h1 strong, h1 strong em {
+    font-weight: 900;
+    text-shadow: var(--primary-shadow-h1);
 }
 
-.section .content p.about-text a:hover {color: var(--primary-color)}
-
-/* Styles for contacts */
-.contacts {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-}
-
-.contacts a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-right: 1.5rem;
-    transition: .2s linear;
-}
-
-.contacts a svg {
-    width: 2rem;
-    height: 2rem;
-
-    fill: var(--color);
-    transition: .2s linear;
-}
-
-.contacts a:hover svg {fill: var(--primary-color)}
-
-/* Lines */
-.lines {
-    display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-
-    opacity: 0.5;
-    z-index: -1;
-}
-
-/* Styles for cards of projects */
-.swiper {
-    height: 40vh;
-    margin-top: 2rem;
-}
-
-.swiper .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-card {
-    --topic-ac: var(--primary-color);
-    --topic-abgc: var(--primary-color-01);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30rem;
-    height: 20rem;
-    padding: 2rem;
-
-    border-radius: 0.5rem;
-
-    background-color: var(--block-color);
-    box-shadow: 5px 8px 10px rgba(25, 20, 35, 0.1);
-}
-
-.project-card h1 {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    font-size: 2em;
-    line-height: 100%;
-}
-
-.project-card h1 span.project-badge {
-    padding: 0.3rem 0.4rem;
-
-    font-weight: 600;
-    font-size: 0.5em;
-    line-height: 80%;
-    color: var(--comment-color);
-
-    border-radius: 0.2rem;
-
-    background-color: var(--comment-color-01);
-    margin-left: 0.5rem;
-}
-
-.project-card h1 span.project-badge.archived {
-    color: var(--primary-color);
-    background-color: var(--primary-color-01);
-}
-
-.project-card h3 {
-    font-weight: 600;
-    font-size: 0.9em;
-    line-height: 100%;
-    margin: 0.5rem 0;
-}
-
-.project-card .project-topics .topic {
-    padding: 0.2rem 0.5rem;
-
-    font-weight: 600;
-    font-size: 0.9em;
-    color: var(--comment-color);
-    line-height: 80%;
-
-    background-color: var(--comment-color-01);
-    border-radius: 0.2rem;
-
-    cursor: default;
-    transition: .3s linear;
-}
-
-.project-card .project-topics .topic:hover {
-    color: var(--topic-ac);
-    background-color: var(--topic-abgc);
-}
-
-.project-card .project-languages {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.project-card .project-languages .lang {
-    display: inline-flex;
-    align-items: center;
-
-    font-weight: 600;
-    font-size: 0.9em;
-    color: var(--comment-color);
-    line-height: 80%;
-
-    cursor: default;
-    margin-right: 1rem;
-}
-
-.project-card .project-languages .lang:last-child {margin-right: 0}
-
-.project-card .project-languages .lang svg {
-    width: 1rem;
-    height: 1rem;
-
-    fill: var(--comment-color);
-    margin-right: 0.5rem;
-}
-
-/* Styles for swiper buttons */
-.swiper-button-next, .swiper-button-prev {outline: none}
-
-/* Styles for message */
-.message {
-    position: fixed;
-    padding: 0.5rem 1rem;
-
-    font-weight: 600;
-    font-size: 0.9em;
-    color: var(--color);
-
-    background-color: var(--block-color);
-    border-radius: 0.5rem 0.5rem 0 0;
-
-    right: 6vw;
-    bottom: 0;
-
-    cursor: default;
-    z-index: 1;
-}
+em {font-size: .8em !important}

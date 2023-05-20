@@ -1,0 +1,83 @@
+/* Primary styles for pseudo footer */
+footer.pseudo-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    width: 88vw;
+
+    left: 6vw;
+    bottom: 6vh;
+}
+
+/* Styles for footer credits */
+footer.pseudo-footer .credits p {
+    font-weight: 600;
+    font-size: .9em;
+    color: var(--comment);
+}
+
+footer.pseudo-footer .credits a {font-size: 1em}
+
+/* Styles for footer navigation */
+footer.pseudo-footer nav.navigation {
+    height: 6vh;
+
+    background-color: var(--block);
+    backdrop-filter: blur(var(--blur));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+footer.pseudo-footer nav.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+footer.pseudo-footer nav.navigation ul li {
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+footer.pseudo-footer nav.navigation ul li::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .4vh;
+
+    background-color: var(--primary);
+    border-radius: .4vh .4vh 0 0;
+    box-shadow: var(--primary-shadow-up);
+
+    opacity: 0;
+
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: .3s linear;
+}
+
+footer.pseudo-footer nav.navigation ul li.active::before {opacity: 1}
+
+footer.pseudo-footer nav.navigation ul li.active button svg,
+footer.pseudo-footer nav.navigation ul li:hover button svg {
+    fill: var(--primary);
+    filter: drop-shadow(var(--primary-shadow));
+}
+
+footer.pseudo-footer nav.navigation ul li button {
+    width: 6vh;
+    height: 6vh;
+    padding: 1.6vh;
+}
+
+footer.pseudo-footer nav.navigation ul li button:hover {background: none}
+
+footer.pseudo-footer nav.navigation ul li button svg {
+    width: 2.8vh;
+    height: 2.8vh;
+
+    fill: var(--transparent-comment);
+    transition: .3s linear;
+}

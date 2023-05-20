@@ -1,0 +1,87 @@
+main.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 76vh;
+}
+
+/* Styles for "About me" section */
+section#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#about .text-information {width: 48vw}
+section#about .text-information p {font-size: 1.1em}
+
+section#about img.image {
+    height: 25.5vh;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* Styles for "Play music" section */
+section#music {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    padding: 1.5vw;
+
+    background-color: var(--block);
+    backdrop-filter: blur(var(--blur));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+section#music .left {display: flex}
+section#music .left button {margin-right: 1.5vw}
+
+section#music .left .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#music .left .information span.action {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+section#music .left .information span.action .mobile-hide,
+section#music .left .information span.action .mobile-hide a {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+section#music .left .information span.action .mobile-hide a {font-weight: 800}
+
+section#music .left .information span.comment {
+    font-weight: 600;
+    font-size: .9em;
+    color: var(--transparent-comment);
+}
+
+section#music .left .information span.comment span#tracks_count {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--transparent-comment);
+}
+
+section#music .right {display: flex}
+
+section#music .right button {
+    width: 4.5vh;
+    height: 4.5vh;
+    padding: 1vh;
+
+    margin-right: 1vw;
+}
+
+section#music .right button:not([disabled]):hover {background-color: var(--primary)}
+section#music .right button:last-child {margin-right: 0}
+
+section#music .right button svg {
+    width: 2.5vh;
+    height: 2.5vh;
+}
