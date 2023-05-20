@@ -91,6 +91,7 @@ section#music .right button svg {
     section#about img.image {display: none}
     section#about .text-information {width: 84vw}
 
+    section#music {width: 81vw}
     section#music .left .information span.action .mobile-hide {display: none}
 
     section#music .left button {
