@@ -81,5 +81,9 @@ em {font-size: .8em !important}
 
 /* Adaptation [mobile] */
 @media screen and (min-width: 300px) and (orientation: portrait) {
-    body {padding: 4vh 8vw}
+    body {
+        width: 84vw;
+        height: 88vh;
+        padding: 4vh 8vw;
+    }
 }
