@@ -90,5 +90,13 @@ section#music .right button svg {
 @media screen and (min-width: 300px) and (orientation: portrait) {
     section#about img.image {display: none}
     section#about .text-information {width: 84vw}
+
     section#music .left .information span.action .mobile-hide {display: none}
+
+    section#music .left button {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.3rem;
+        margin-right: 3vw;
+    }
 }
