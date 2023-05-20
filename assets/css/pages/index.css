@@ -88,7 +88,7 @@ section#music .right button svg {
 
 /* Adaptation [mobile] */
 @media screen and (min-width: 300px) and (orientation: portrait) {
-    main.content {height: 90.5vh}
+    main.content {height: 82.5vh}
 
     section#about img.image {display: none}
     section#about .text-information {width: 84vw}
